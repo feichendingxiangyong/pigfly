@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="搜索">
+    <meta name="author" content="Shengli Hu">
+    <link rel="icon" href="{{ static_url('img/favicon.ico') }}">
+
+    <title>让猪自由自在尽情的飞</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ static_url('css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ static_url('css/pigfly.css') }}" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="{{ static_url('js/ie8-responsive-file-warning.js') }}"></script><![endif]-->
+    <script src="{{ static_url('js/ie-emulation-modes-warning.js') }}"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="{{ static_url('js/html5shiv.min.js') }}"></script>
+    <script src="{{ static_url('js/respond.min.js') }}"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+
+    <form class="form-keywords" role="form" action="/search" method="get">
+        <input type="text" name="q" class="form-control" placeholder="输入关键字" required autofocus>
+        <br>
+        <button class="btn btn-lg btn-primary" type="submit">PigFly</button>
+    </form>
+
+</div>
+<!-- /container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{{ static_url('js/jquery.min.js') }}"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{{ static_url('js/bootstrap.min.js') }}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{{ static_url('js/ie10-viewport-bug-workaround.js') }}"></script>
+</body>
+</html>
+
